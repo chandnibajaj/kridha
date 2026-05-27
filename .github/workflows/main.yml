@@ -2,6 +2,8 @@ name: Terraform plan
 on:
   workflow_dispatch:
 
+# Refer this Document for more info on permissions key
+# http://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#permissions
 permissions: 
   id-token: write
   contents: read
@@ -9,6 +11,9 @@ permissions:
 jobs:
   terraform-plan:
     runs-on: self-hosted
+    defaults:
+      run:
+        working-directory: / #path from which all the script of your steps inside your job should run
     steps:
     - name: Checkout
       uses: actions/checkout@v6.0.2
