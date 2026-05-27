@@ -25,7 +25,8 @@
 6. click on federated credentials, then click on Add credentials
 <img width="772" height="295" alt="image" src="https://github.com/user-attachments/assets/ae65739a-eaaa-449a-9b90-c8003819fc37" />
 7. Select a federated credential scenario as Github Actions deploying Azure Resources
-<img width="602" height="353" alt="image" src="https://github.com/user-attachments/assets/367e6a50-a07c-4ed4-97ae-ca7346fdf0c6" />
+<img width="602" height="353" alt="image" src="https://github.com/user-attachments/assets/367e6a50-a07c-4ed4-97ae-ca7346fdf0c6" />   
+<br>
 8. Now add the required detials like
 - Organistation --> Name of your organsition else your github account name
 - Repository    --> name of your repository where you want to use this app registation
@@ -42,3 +43,12 @@
   <img width="914" height="413" alt="image" src="https://github.com/user-attachments/assets/cead9f23-2759-43bf-a667-5981a181a043" />
 - then assign the role by clicking Review + assign button
 <img width="855" height="374" alt="image" src="https://github.com/user-attachments/assets/1d0533c3-27c5-458a-af55-389f311ae60c" />
+
+
+## To run a workflow manually 
+- go to actions
+- select your workflow
+- If workflow_dispatch is set you can see Run Workflow Button
+- Select Branch if needed, default main will be selected
+- click Run wOrkflow
+<img width="944" height="368" alt="image" src="https://github.com/user-attachments/assets/3ac60a9f-ad9d-4f44-b4e8-d6dde3669f6f" />
