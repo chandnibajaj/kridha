@@ -6,32 +6,32 @@ permissions:
   contents: read
 jobs:
   terraform-plan:
-    runs on: self-hosted
+    runs-on: self-hosted
     defaults: 
       run:
-        working directory: .github/workflows
-steps: 
-- name: Checkout
-  uses: actions/checkout@v6.0.3
+        working-directory: .github/workflows
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v6.0.3
 
-- name: Azure Login
-  uses: Azure/login@v3
-  with:
-    client-id: d2ec323b-c43c-429f-b66a-ee6a76bbab86
-    tenant-id: d62d1853-842b-4d22-b4c5-4fa00b2bcec9
-    subscription-id: 09d55635-2a09-4af6-9e93-6bb44383a7aa
+    - name: Azure Login
+      uses: Azure/login@v3
+      with:
+        client-id: d2ec323b-c43c-429f-b66a-ee6a76bbab86
+        tenant-id: d62d1853-842b-4d22-b4c5-4fa00b2bcec9
+        subscription-id: 09d55635-2a09-4af6-9e93-6bb44383a7aa
 
-- name: Terraform init
-  run: terraform init
+    - name: Terraform init
+    run: terraform init
       
-- name: Terraform fmt
-  run: terraform fmt
+    - name: Terraform fmt
+    run: terraform fmt
       
-- name: Terraform validate
-  run: terraform validate
+    - name: Terraform validate
+    run: terraform validate
       
-- name: Terraform plan
-  run: terraform plan
+    - name: Terraform plan
+    run: terraform plan
 
   
   
