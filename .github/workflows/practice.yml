@@ -7,9 +7,9 @@ permissions:
 jobs:
   terraform-plan:
     runs-on: self-hosted
-    defaults: 
-      run:
-        working-directory: .github/workflows
+    # defaults: 
+    #   run:
+    #     working-directory: .github/workflows
     steps: 
       - name: Checkout
         uses: actions/checkout@v6.0.3
