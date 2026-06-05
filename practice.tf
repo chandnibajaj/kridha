@@ -18,6 +18,6 @@ resource "azurerm_resource_group" "Practice" {
 }
 
 resource "azurerm_resource_group" "Practice1" {
-  name     = "practice_actions_2"
+  name     = "practice_actions_3"
   location = "central india"
 }
