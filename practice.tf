@@ -9,10 +9,15 @@ terraform {
 
 provider "azurerm" {
   features {}
-  
+
 }
 
 resource "azurerm_resource_group" "Practice" {
   name     = "practice_actions"
+  location = "central india"
+}
+
+resource "azurerm_resource_group" "Practice1" {
+  name     = "practice_actions_1"
   location = "central india"
 }

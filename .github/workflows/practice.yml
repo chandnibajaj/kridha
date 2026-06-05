@@ -2,6 +2,7 @@ name: Practice_actions
 on: 
   push:
     branches: 
+      - 'features/**'
       - '!main'
   workflow_dispatch: 
 permissions:
