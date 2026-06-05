@@ -4,6 +4,8 @@ on:
 permissions:
   id-token: write
   contents: read
+env:
+  ARM_SUBSCRIPTION_ID: 09d55635-2a09-4af6-9e93-6bb44383a7aa
 jobs:
   terraform-plan:
     runs-on: self-hosted
