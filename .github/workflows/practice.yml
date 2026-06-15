@@ -2,8 +2,8 @@ name: Practice_actions
 on: 
   push:
     branches: 
-      - 'features/**'
-      - '!main'
+      - 'features/PMR101'
+      # - '!main'
   workflow_dispatch: 
 permissions:
   id-token: write
