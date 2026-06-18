@@ -39,7 +39,6 @@ jobs:
         
       - name: Terraform plan
         run: terraform plan
-jobs:
   terraform-apply:
     needs: terraform plan
     environment: terraform-plan-run
