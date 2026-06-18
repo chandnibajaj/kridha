@@ -3,7 +3,7 @@ on:
   push:
     branches: 
       - 'features/PMR101'
-      # - '!main'  
+      - '!main'
   workflow_dispatch: 
 permissions:
   id-token: write
