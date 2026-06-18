@@ -40,7 +40,7 @@ jobs:
       - name: Terraform plan
         run: terraform plan
 jobs:
-  terraform-plan:
+  terraform-apply:
     needs: terraform plan
     environment: terraform-plan-run
     runs-on: self-hosted
